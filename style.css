@@ -1,0 +1,315 @@
+body{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+/*menu de navegacion*/
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menunav{
+    list-style: none;
+    gap: 50px;
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+}
+
+#botones{
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+}
+
+/*hero*/
+#titular {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 300px;
+    background-image: url(./images/background_img.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    h1{
+        max-width: 300px;
+        font-weight: 400;
+        color: white;
+        margin-right: 100px;
+    }
+}
+
+.btn-class {
+    border: none;
+    background-color: black;
+    border-radius: 50px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        font-size: 14px;
+    }
+}
+
+.card-img-top {
+    transition: border 3s ease;
+    border: 5px solid transparent;
+}
+
+.leer-mas{
+    display: none;
+}
+
+.leer.mostrarMas .leer-mas{
+    display: inline;
+}
+
+/*descripcion*/
+#des{
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    padding-top: 100px;
+    p{
+        font-weight: 500;
+    }
+}
+
+#btn-learn{
+    display: flex;
+    justify-content: center;
+    border-style: none;
+    background: none;
+    a{
+        text-decoration: none;
+        color: rgb(26, 18, 241);
+        font-weight: 500;
+    }
+}
+
+/*tarjetero*/
+#title-cards{
+    margin: 100px 0px;
+    text-align: center;
+    p{
+        margin-top: 15px;
+        font-weight: 500;
+    }
+}
+
+#caja-cards{
+    padding: 50px;
+    margin: 0;
+}
+
+.card-name{
+    font-weight: 600;
+}
+
+.card-price{
+    font-weight: 700;
+}
+
+/*formulario*/
+#pregunta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        padding: 10px;
+        text-align: center;
+        max-width: 250px;
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#email{
+    width: 450px;
+    padding: 10px;
+    border: 2px solid #121212;
+    border-radius: 5px;
+}
+
+#question{
+    width: 450px;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid #121212;
+    border-radius: 5px;
+}
+
+#btn-quest{
+    border-radius: 5px;
+    border-style: none;
+    background-color: #121212;
+    padding: 10px 20px;
+    margin: 10px 0px 30px 0px;
+    color: #ffffff;
+}
+
+#quest{
+    display: flex;
+    justify-content: center;
+}
+
+/*footer*/
+footer{
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+#logo-final{
+    max-width: 130px;
+}
+
+#menu-footer{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    gap: 50px;
+    a{
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 400;
+    }
+}
+
+#contact{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+}
+
+
+@media (max-width: 576px) { /*mobile*/
+    /*navegación*/
+    #navbar {
+        padding: 20px 50px;
+    }
+
+    #logo{
+        width: 200px;
+    }
+
+    #menunav { /*ocultamos*/
+        display: none;
+    }
+
+    #botones{
+        display: flex;
+        margin: 0;
+    }
+
+    /*hero*/
+    #titular {
+        padding: 50px 0px 50px 50px;
+        h1{
+            margin-right: 260px;
+        }
+    }
+
+    btn-class {
+        margin-top: 10px;
+        padding: 8px 16px;
+    }
+
+    /*descripción*/
+   #des{
+    padding: 50px;
+   }
+
+    /*tarjetero*/
+    #title-cards{
+        margin: 0px 0px 20px 0px;
+    }
+
+    #caja-cards{
+        padding: 10px 50px 50px 50px;
+    }
+
+    /*footer*/
+    #menu-footer{ /*ocultamos*/
+        display: none;
+    }
+}
+
+@media (min-width: 768px) { /*tablet*/
+    /*navegación*/
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 50px;
+        margin: 0;
+    }
+
+    #logo{
+        display: flex;
+        width: 130px;
+    }
+
+    #menunav {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0px 10px;
+        gap: 10px;
+        a{
+            font-size: 14px ;
+        }
+    }
+    
+    #botones{
+        display: flex;
+        gap: 5px;
+        padding: 0;
+        margin-bottom: 0;
+    }
+   
+    /*hero*/
+    #titular {
+        padding: 50px 0px 50px 50px;
+        h1{
+            margin-right: 390px;
+        }
+    }
+
+    /*descripcion*/
+    #des{
+        padding: 50px 0px;
+        max-width: 410px;
+    }
+    
+    /*tarjetero*/
+    #title-cards{
+        margin:0px;
+    }
+
+    #caja-cards {
+        padding: 10px 50px 50px 50px;
+    }
+
+    /*footer*/
+    #menu-footer{
+        gap: 20px;
+        a{
+            font-size: 12px;
+        }
+    }
+}
